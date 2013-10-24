@@ -73,3 +73,6 @@ grunt.initConfig({
   },
 })
 ```
+
+## Updates
+Latest version of closure compiler added 2013/10/23.
