@@ -19,9 +19,6 @@ module.exports = function(grunt) {
         } else if (!jsOut) {
             grunt.warn('No output path specified.');
             return false;
-        } else if (!opts.closureJar) {
-            grunt.warn('No jar file specified.');
-            return false;
         } else if (
             ['SIMPLE_OPTIMIZATIONS',
             'ADVANCED_OPTIMIZATIONS',
