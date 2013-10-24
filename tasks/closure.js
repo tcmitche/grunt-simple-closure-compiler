@@ -9,10 +9,9 @@ module.exports = function(grunt) {
             js = opts.js.isArray ? opts.js.join(' ') : opts.js,
             jsOut = opts.jsOutputFile,
             compilationLevel = opts.compilationLevel || 'SIMPLE_OPTIMIZATIONS',
-            command = 'java -jar "' + opts.closureJar + '"',
+            command = 'java -jar ' + __dirname + '/../compiler/compiler.jar',
             done = this.async();
 
-        grunt.log.ok(__dirname);
         if (!js) {
             grunt.log.error(opts);
             grunt.warn('No input file specified.');
